@@ -1867,3 +1867,9 @@ org.eclipse.core.runtime.CoreException: Launch configuration Application (3) ref
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2019-09-20 15:57:33.560
 !MESSAGE Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-09-20 15:59:59.708
+!MESSAGE Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-09-20 15:59:59.719
+!MESSAGE Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
