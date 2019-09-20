@@ -21,7 +21,7 @@ public class CustomerServiceImpl implements CustomerService {
 		return customerRepository.findAll();
 	}
 
-	public void setCustomerRepository(CustomerRepository customerRepository) {
+	public void setCustomerRepo(CustomerRepository customerRepository) {
 		this.customerRepository = customerRepository;
 	}
 

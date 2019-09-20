@@ -7,22 +7,22 @@ import com.pluralsight.repository.CustomerRepository;
 
 public class CustomerServiceImpl implements CustomerService {
 
-	private CustomerRepository customerRepository;
+	private CustomerRepository customerRepo;
 
 	public CustomerServiceImpl() {
 	}
 
 	public CustomerServiceImpl(CustomerRepository customerRepository) {
-		this.customerRepository = customerRepository;
+		this.customerRepo = customerRepository;
 	}
 
 	@Override
 	public List<Customer> findAll() {
-		return customerRepository.findAll();
+		return customerRepo.findAll();
 	}
 
-	public void setCustomerRepository(CustomerRepository customerRepository) {
-		this.customerRepository = customerRepository;
+	public void setCustomerRepo(CustomerRepository customerRepo) {
+		this.customerRepo = customerRepo;
 	}
 
 }
