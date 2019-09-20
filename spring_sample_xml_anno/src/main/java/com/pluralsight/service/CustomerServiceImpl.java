@@ -10,13 +10,19 @@ import com.pluralsight.repository.CustomerRepository;
 
 @Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
-	
-	@Autowired
+
+	// @Autowired
 	private CustomerRepository customerRepo;
-	
+
+	@Autowired
+	public void setCustomerRepo(CustomerRepository customerRepo) {
+		System.out.println("We are using setter injection");
+		this.customerRepo = customerRepo;
+	}
+
 	@Override
 	public List<Customer> findAll() {
 		return customerRepo.findAll();
 	}
-	
+
 }
