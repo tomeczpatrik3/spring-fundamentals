@@ -11,8 +11,7 @@ public class AppConfig {
 
 	@Bean(name="customerService")
 	public CustomerService getCustomerService() {
-		CustomerServiceImpl service = new CustomerServiceImpl();
-		service.setCustomerRepo(getCustomerRepository());
+		CustomerServiceImpl service = new CustomerServiceImpl(getCustomerRepository());
 		return service;
 	}
 	

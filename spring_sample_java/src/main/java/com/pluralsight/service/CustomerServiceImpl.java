@@ -12,6 +12,11 @@ public class CustomerServiceImpl implements CustomerService {
 	private CustomerRepository customerRepo;
 	
 	@Autowired
+	public CustomerServiceImpl(CustomerRepository customerRepo) {
+		this.customerRepo = customerRepo;
+	}
+
+	//@Autowired
 	public void setCustomerRepo(CustomerRepository customerRepo) {
 		this.customerRepo = customerRepo;
 	}
