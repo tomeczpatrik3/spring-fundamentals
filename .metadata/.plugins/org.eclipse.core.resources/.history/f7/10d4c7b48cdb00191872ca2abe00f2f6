@@ -1,0 +1,14 @@
+package com.pluralsight.service;
+
+import com.pluralsight.repository.CustomerRepository;
+import com.pluralsight.repository.HibernateCustomerRepositoryImpl;
+
+public class CustomerServiceImpl {
+	
+	private CustomerRepository customerRepo = new HibernateCustomerRepositoryImpl();
+	
+	public List<Customer> findAll() {
+		return customerRepo.findAll();
+	}
+	
+}
