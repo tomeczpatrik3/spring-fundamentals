@@ -6,18 +6,9 @@
 	<bean name="customerRepository"
 		class="com.pluralsight.repository.HibernateCustomerRepositoryImpl"/>
 
-	<!-- Setter injection example -->
-	<!-- 
 	<bean name="customerService"
 		class="com.pluralsight.service.CustomerServiceImpl">
 		<property name="customerRepo" ref="customerRepository"/>
-	</bean>
-	 -->
-	 
-	<!-- Constructor Injection example -->
-	<bean name="customerService"
-		class="com.pluralsight.service.CustomerServiceImpl">
-		<constructor-arg index="0" ref="customerRepository"/>
 	</bean>
 
 </beans>
